@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Hasta Sahibi Girişi";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4"><i class="fa-solid fa-dog text-primary"></i> Hasta Sahibi Girişi</h2>
+                    <div style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-posta adresiniz" autocomplete="off">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Şifreniz" autocomplete="off">
+                        </div>
+
+                        <!-- Sadece frontend yönlendirme -->
+                        <button type="button" class="btn btn-primary w-100" onclick="location.href='/OwnerDashboard/Index'">
+                            Giriş Yap
+                        </button>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <span>Hesabınız yok mu?</span>
+                        <a href="/OwnerAccount/Register">Kayıt Ol</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

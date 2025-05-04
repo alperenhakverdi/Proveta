@@ -1,0 +1,183 @@
+/* ========== GENEL ========== */
+body {
+    background: linear-gradient(to bottom right, #e0f2fe, #f8fafc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ========== SAYFA BAÞLIÐI ========== */
+.page-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    color: #6b7280;
+    margin-top: -10px;
+}
+
+/* ========== GÝRÝÞ KARTLARI ========== */
+.login-options {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+
+.login-card {
+    background: #f1f5f9;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 32px 24px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .login-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-card h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .login-card .btn {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 1rem;
+        padding: 8px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+/* ========== DUYURULAR ========== */
+.announcements {
+    width: 100%;
+}
+
+    .announcements h2 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+.announcements-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.announcement-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px 18px;
+    flex: 1 1 300px;
+    max-width: 360px;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+    .announcement-card:hover {
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .announcement-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .announcement-card p {
+        font-size: 0.95rem;
+        color: #333;
+    }
+
+    .announcement-card a {
+        font-size: 0.9rem;
+        color: #7c3aed;
+        text-decoration: underline;
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+/* ========== ETÝKETLER ========== */
+.tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+    .tag.system {
+        background: #e0e7ff;
+        color: #3730a3;
+    }
+
+    .tag.info {
+        background: #dbeafe;
+        color: #0369a1;
+    }
+
+    .tag.update {
+        background: #fef9c3;
+        color: #b45309;
+    }
+
+    .tag.guncelleme {
+        background: #f3e8ff;
+        color: #7c3aed;
+    }
+
+    .tag.bilgilendirme {
+        background: #dcfce7;
+        color: #15803d;
+    }
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #666;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 20px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .login-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .announcements-cards {
+        justify-content: center;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.95rem;
+    }
+}

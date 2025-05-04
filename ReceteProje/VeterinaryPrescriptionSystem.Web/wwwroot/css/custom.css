@@ -1,0 +1,30 @@
+body { background: #eaf2fb; font-family: 'Poppins', sans-serif; }
+.container { max-width: 1200px; margin: 0 auto; padding: 32px 0; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+.logo-title { display: flex; align-items: center; gap: 12px; }
+.logo-title h1 { font-size: 1.6rem; margin: 0; }
+.top-nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; }
+.top-nav a { color: #222; text-decoration: none; font-weight: 600; }
+.top-nav a:hover { text-decoration: underline; }
+main { }
+.login-options { display: flex; justify-content: center; gap: 48px; margin-bottom: 40px; }
+.login-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 8px #0001; padding: 32px 40px; text-align: center; min-width: 260px; }
+.login-card h2 { font-size: 1.2rem; margin: 16px 0 20px 0; }
+.btn { display: inline-block; padding: 10px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; font-size: 1rem; margin-top: 8px; }
+.btn-primary { background: #1976d2; color: #fff; border: none; }
+.btn-secondary { background: #2e7d32; color: #fff; border: none; }
+.announcements { margin-top: 32px; }
+.announcements h2 { font-size: 1.1rem; margin-bottom: 18px; }
+.announcements-cards { display: flex; gap: 24px; }
+.announcement-card { background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #0001; padding: 24px 20px; flex: 1; }
+.announcement-card h3 { font-size: 1.1rem; margin: 0 0 8px 0; }
+.announcement-card p { font-size: 0.98rem; color: #444; }
+.announcement-card .tag { display: inline-block; font-size: 0.85rem; font-weight: 600; border-radius: 8px; padding: 2px 12px; margin-bottom: 8px; }
+.tag.system { background: #1976d2; color: #fff; }
+.tag.info { background: #0097a7; color: #fff; }
+.tag.update { background: #7c4dff; color: #fff; }
+footer { text-align: center; margin-top: 48px; color: #888; font-size: 0.95rem; }
+@media (max-width: 900px) {
+    .login-options, .announcements-cards { flex-direction: column; gap: 20px; }
+    .login-card, .announcement-card { min-width: 0; }
+} 

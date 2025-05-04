@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Hasta Sahibi Kayıt Ol";
+}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
+            <div class="card shadow-sm">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4"><i class="fa-solid fa-user-plus text-success"></i> Kayıt Ol</h2>
+                    <form method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ad Soyad</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-posta adresiniz">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefon numaranız">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Şifreniz">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Kayıt Ol</button>
+                    </form>
+                    <div class="mt-3 text-center">
+                        <span>Zaten hesabınız var mı?</span>
+                        <a href="/OwnerAccount/Login">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

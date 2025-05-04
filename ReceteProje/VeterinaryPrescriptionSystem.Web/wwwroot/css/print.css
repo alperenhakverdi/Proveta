@@ -1,0 +1,14 @@
+/* wwwroot/css/print.css */
+@media print {
+    .btn, .navbar, .sidebar, .footer {
+        display: none !important;
+    }
+
+    body {
+        background: #fff !important;
+    }
+
+    .card {
+        box-shadow: none !important;
+    }
+}

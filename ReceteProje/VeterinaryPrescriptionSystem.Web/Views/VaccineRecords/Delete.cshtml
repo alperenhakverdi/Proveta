@@ -1,0 +1,40 @@
+@model VeterinaryPrescriptionSystem.Web.Models.VaccineRecord
+
+@{
+    ViewData["Title"] = "Aşı Kaydını Sil";
+}
+
+<div class="container py-4">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0"><i class="fa fa-trash"></i> Aşı Kaydını Sil</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="text-danger">Bu aşı kaydını silmek istediğinizden emin misiniz?</h5>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Aşı Adı:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
+
+                        <dt class="col-sm-4">Tarih:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Date)</dd>
+
+                        <dt class="col-sm-4">Veteriner:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Veterinarian)</dd>
+
+                        <dt class="col-sm-4">Not:</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Note)</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="PatientId" />
+                <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Sil</button>
+                <a asp-controller="Patients" asp-action="Details" asp-route-id="@Model.PatientId" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> Geri Dön</a>
+            </form>
+        </div>
+    </div>
+</div> 

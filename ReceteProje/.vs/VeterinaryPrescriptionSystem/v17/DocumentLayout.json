@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\ReceteProje\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|c:\\users\\asus\\receteproje\\veterinaryprescriptionsystem.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|solutionrelative:veterinaryprescriptionsystem.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|c:\\users\\asus\\receteproje\\veterinaryprescriptionsystem.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|solutionrelative:veterinaryprescriptionsystem.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|c:\\users\\asus\\receteproje\\veterinaryprescriptionsystem.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB7AF25D-CF91-4A14-BE87-A5DB1FE4FD13}|VeterinaryPrescriptionSystem.Web\\VeterinaryPrescriptionSystem.Web.csproj|solutionrelative:veterinaryprescriptionsystem.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "VeterinaryPrescriptionSystem.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "VeterinaryPrescriptionSystem.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T07:04:31.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "VeterinaryPrescriptionSystem.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "VeterinaryPrescriptionSystem.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T07:04:30.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Program.cs",
+              "RelativeDocumentMoniker": "VeterinaryPrescriptionSystem.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\ReceteProje\\VeterinaryPrescriptionSystem.Web\\Program.cs",
+              "RelativeToolTip": "VeterinaryPrescriptionSystem.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T07:04:20.18Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 107,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

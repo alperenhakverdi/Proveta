@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\VeterinaryPrescriptionSystem.Web",
+    "\\VeterinaryPrescriptionSystem.Web\\Controllers",
+    "\\VeterinaryPrescriptionSystem.Web\\Models",
+    "\\VeterinaryPrescriptionSystem.Web\\Views",
+    "\\VeterinaryPrescriptionSystem.Web\\Views\\OwnerAccount",
+    "\\VeterinaryPrescriptionSystem.Web\\Views\\OwnerDashboard",
+    "\\VeterinaryPrescriptionSystem.Web\\Views\\Patients",
+    "\\VeterinaryPrescriptionSystem.Web\\wwwroot",
+    "\\VeterinaryPrescriptionSystem.Web\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\VeterinaryPrescriptionSystem.Web\\Views\\OwnerAccount\\RandevuAl.cshtml",
+  "PreviewInSolutionExplorer": false
+}

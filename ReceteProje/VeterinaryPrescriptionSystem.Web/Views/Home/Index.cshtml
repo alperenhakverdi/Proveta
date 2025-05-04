@@ -1,0 +1,76 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Veterinerlik Hasta Takip Sistemi";
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap & FontAwesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Özel Stil -->
+    <link rel="stylesheet" href="~/css/index.css" />
+</head>
+<body>
+    <div class="container pt-3 pb-5">
+        <!-- Sayfa Başlığı -->
+        <h1 class="page-title">Veterinerlik Hasta Takip Sistemi</h1>
+        <p class="page-subtitle text-muted mb-5 text-center">
+            Veterinerler ve hasta sahipleri için modern takip ve randevu sistemi
+        </p>
+
+        <main>
+            <!-- Giriş Kartları -->
+            <section class="login-options">
+                <div class="login-card">
+                    <i class="fa-solid fa-dog fa-2x"></i>
+                    <h2>Hasta Sahibi Girişi</h2>
+                    <a href="/OwnerAccount/Login" class="btn btn-primary">Giriş</a>
+                </div>
+                <div class="login-card">
+                    <i class="fa-solid fa-user-doctor fa-2x"></i>
+                    <h2>Veteriner Girişi</h2>
+                    <a href="/Identity/Account/Login?returnUrl=/Patients" class="btn btn-success">Giriş</a>
+                </div>
+            </section>
+
+            <!-- Duyurular -->
+            <section class="announcements mt-5">
+                <h2 class="d-flex align-items-center gap-2 mb-4">
+                    <i class="fa-solid fa-circle-info text-primary"></i> Haberler / Duyurular
+                </h2>
+                <div class="announcements-cards">
+                    <div class="announcement-card">
+                        <span class="tag system">Dikkat</span>
+                        <h3>Kuduz Vakaları</h3>
+                        <p>Son 1 ayda İç Anadolu Bölgesinde Kuduz Vakaları %10 artış gösterdi..</p>
+                        <a href="#">Devamını oku...</a>
+                    </div>
+                    <div class="announcement-card">
+                        <span class="tag info">Bilgilendirme</span>
+                        <h3>Yeni Serotip</h3>
+                        <p>Şap hastalığının yeni serotipi duyuruldu.</p>
+                        <a href="#">Devamını oku...</a>
+                    </div>
+                    <div class="announcement-card">
+                        <span class="tag update">Güncelleme</span>
+                        <h3>Randevu Sistemi Geliştirildi</h3>
+                        <p>Online randevu sistemi daha kullanıcı dostu hale getirildi.</p>
+                        <a href="#">Devamını oku...</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-5 pt-4 border-top text-center">
+            <p class="text-muted small">© 2025 Veterinerlik Bilgi Sistemi. Tüm Hakları Saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>

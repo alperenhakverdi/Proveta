@@ -1,0 +1,94 @@
+@model VeterinaryPrescriptionSystem.Web.Models.ViewModels.OwnerDashboardViewModel
+@{
+    ViewData["Title"] = "Hasta Sahibi Paneli";
+    var owner = Model.Owner;
+    var patient = Model.Patients.FirstOrDefault();
+}
+<div class="panel-container" style="max-width:900px;margin:32px auto;background:#fff;border-radius:16px;box-shadow:0 2px 16px #0001;padding:32px;color:#000;">
+    <header class="panel-header" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:32px;">
+        <h1 style="font-size:2rem;font-weight:600;">Hasta Sahibi Paneli</h1>
+        <div class="header-actions" style="display:flex;gap:12px;">
+            <a href="/OwnerAccount/RandevuAl" class="header-btn btn btn-primary">Randevu Al</a>
+            <a href="#" class="header-btn btn btn-info text-white">Hayvanımın Neyi Var?</a>
+            <a href="/OwnerAccount/Login" class="header-btn btn btn-danger">
+                <i class="fa-solid fa-right-from-bracket"></i> Çıkış Yap
+            </a>
+        </div>
+    </header>
+
+    <section class="owner-info" style="margin-bottom:32px;">
+        <h2><i class="fa-solid fa-user"></i> Sahip Bilgileri</h2>
+        <ul style="margin-top:12px;">
+            <li>Ad Soyad: <b>@owner.Name</b></li>
+            <li>Telefon: <b>@owner.Phone</b></li>
+            <li>Adres: <b>@owner.Address</b></li>
+            <li>Email: <b>@owner.Email</b></li>
+        </ul>
+    </section>
+
+    <section class="animal-info" style="margin-bottom:32px;">
+        <h2><i class="fa-solid fa-dog"></i> Hayvan Bilgileri</h2>
+        @if (patient != null)
+        {
+        <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap;">
+            <div>
+                <ul>
+                    <li>Adı: <b>@patient.Name</b></li>
+                    <li>Yaş: <b>@patient.Age</b></li>
+                    <li>Tür: <b>@patient.Species</b></li>
+                    <li>Irk: <b>@patient.Breed</b></li>
+                    <li>Sahip Adı: <b>@patient.OwnerName</b></li>
+                    <li>Sahip Telefon: <b>@patient.OwnerPhone</b></li>
+                    <li>Sahip Email: <b>@patient.OwnerEmail</b></li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://placekitten.com/160/160" alt="Hayvan Fotoğrafı" style="width:160px;height:160px;border-radius:12px;object-fit:cover;">
+            </div>
+        </div>
+        }
+        else
+        {
+        <div class="alert alert-warning">Kayıtlı hayvanınız bulunmamaktadır.</div>
+        }
+    </section>
+
+    <section class="special-info" style="margin-bottom:32px;">
+        <h2><i class="fa-solid fa-notes-medical"></i> Özel Bilgiler</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <div class="card p-2">Tohumlama: Yapılmadı</div>
+            <div class="card p-2">Çiftleşme: Yapıldı</div>
+            <div class="card p-2">Doğum: Yapmadı</div>
+            <div class="card p-2">Gebelik Durumu: Değil</div>
+            <div class="card p-2">Doğumsal Anomali: Yok</div>
+        </div>
+    </section>
+
+    <section class="vaccine-info" style="margin-bottom:32px;">
+        <h2><i class="fa-solid fa-syringe"></i> Aşı Takvimi</h2>
+        @if (Model.VaccineRecords.Any())
+        {
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            @foreach (var v in Model.VaccineRecords)
+                {
+            <div class="card p-2" style="min-width:180px;">
+                <b>@v.VaccineName</b><br />
+                <span>@v.Date.ToString("dd.MM.yyyy")</span>
+                @if (!string.IsNullOrEmpty(v.Note))
+                        {
+                <div class="text-muted" style="font-size:0.9em;">@v.Note</div>
+                        }
+            </div>
+                }
+        </div>
+        }
+        else
+        {
+        <div class="alert alert-info">Kayıtlı aşı bulunmamaktadır.</div>
+        }
+    </section>
+
+    <footer style="text-align:center;color:#888;margin-top:32px;">
+        <p>© 2025 Veterinerlik Bilgi Sistemi. Tüm Hakları Saklıdır.</p>
+    </footer>
+</div>
